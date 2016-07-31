@@ -1,10 +1,43 @@
 source 'https://rubygems.org'
 
+# Require a specific ruby version
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Use sqlite3 as the database for development and test
+gem 'sqlite3', group: [:development, :test]
+# Use postgres as the database in production
+gem 'pg', group: :production
+
+# Add 12 factor for Heroku
+gem 'rails_12factor', group: :production
+
+# Use bootstrap for improving the look and feel
+gem 'bootstrap-sass'
+
+gem 'forest_liana'
+
+# This gem was built for the use of 'Lightbox for Bootstrap 3' as Rails assets pipeline
+gem 'lightbox-bootstrap-rails'
+
+# A Ruby wrapper to integrate scrollReveal - A small library to create and maintain how elements fade in, triggered when they enter the viewport.
+gem "scrollreveal-rails"
+
+gem 'jquery-smooth-scroll-rails', '~> 0.0.5'
+
+# jQuery Countdown (gem version reflects assets version) packaged for standalone sprockets or rails
+gem 'jquery-countdown-rails', '~> 2.0', '>= 2.0.2'
+
+# Flexslider 2 by Woo Themes - https://github.com/woothemes/FlexSlider
+gem 'flexslider'
+
+# Use mailchimp API
+gem 'gibbon', '~> 2.2'
+
+# Secure login credentials
+gem "figaro"
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -42,4 +75,7 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
+
+
+
 
