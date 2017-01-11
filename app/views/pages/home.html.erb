@@ -30,20 +30,20 @@
 	<!-- End Site Header -->
     <!-- Showcase -->
    <div class="main-container">
-            <header class="page-header">
-                <div class="background-image-holder parallax-background">
-                    <%= image_tag('head2.jpg', class: 'background-image', alt: 'JSiE') %>
-                </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12 text-center">
-                             <div class="spacer-20"></div>
-                            <h2 class="text-white space-bottom-medium"><br>International Social Innovation Challenge 2015</h2>
+                             <div class="spacer-30"></div>
+                            <h2 class="space-bottom-medium"><br>International Social Innovation Challenge 2015</h2>
                             <%= link_to "Hear the Story", "#{root_path}#media", :class => "btn btn-primary btn-lg" %>
+                            <div class="spacer-30"></div>
+                        </div>
+                            <div class="background-image-holder parallax-background">
+                    <%= image_tag('head2.jpg', class: 'background-image', alt: 'JSiE') %>
+                
                         </div>
                     </div>
                 </div>
-            </header>
         </div>
     <!-- Start Body Content -->
   	<div class="main" role="main">
@@ -97,14 +97,14 @@
                 </div>
                 
                         <!-- Schedule Section --> 
-                       <section class="onepage-section" id="schedule">
+                <section class="onepage-section" id="schedule">
                 <div class="lgray-bg padding-tb50">
                 <div class="container">
                     <header class="onepage-section-headers text-align-center">
                         <h3 class="page-title">Schedule</h3>
                          <p class="lead"><strong>ISIC-15,</strong> A “collab-etiton” bringing together top students from India, Pakistan and the UK to design solutions to the pressing global social challenge of empowering women through safer communities. </p>
                         <h2 class="page-stitle"></h2>
-                        <a href="images/ISIC15.pdf" target="_blank" class="btn btn-primary btn-lg">Download Schedule PDF</a>
+                        <%= link_to "Download Schedule PDF", "https://drive.google.com/file/d/0B0eUcH-BwSm3cW93MEZBYnUzVTg/view?usp=sharing", :class => "btn btn-primary btn-lg" %>
                     </header>
             </div>
             </section>
