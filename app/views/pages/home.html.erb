@@ -29,29 +29,22 @@
 	</header>
 	<!-- End Site Header -->
     <!-- Showcase -->
-    <div class="showcase wheighter">
-        <!-- Start Hero Slider -->
-        <div class="hero-slider flexslider wheighter" data-autoplay="yes" data-pagination="no" data-arrows="no" data-style="fade" data-speed="5000" data-pause="yes">
-            <ul class="slides">
-            <li class=" parallax parallax1 wheighter" style="background-image:url(http://i1031.photobucket.com/albums/y380/jeremywade10/header1_zps31vjng4v.jpg)">
-            </li>
-            <li class=" parallax parallax2 wheighter" style="background-image:url(http://i1031.photobucket.com/albums/y380/jeremywade10/header3_zpsvn2k2gvb.jpg)"></li>
-
-            </ul>
-        </div>
-        <!-- End Hero Slider -->
-        <div class="event-hero-info">
-        	<div class="container">
-                <div class="event-info">
-                     <span class="fl" data-appear-animation="fadeInDown" data-appear-animation-delay="200">International Social Innovation Challenge</span>
-                    <span class="sl" data-appear-animation="zoomIn" data-appear-animation-delay="500">ISIC-15</span>
-                    <span class="tl" data-appear-animation="fadeInDown" data-appear-animation-delay="700"><strong>at OP Jindal Global University - Delhi NCR, India</strong> <br> with University of Southampton & Lahore University of Management Sciences </span>
-                    <span class="event-date" data-appear-animation="fadeInUp" data-appear-animation-delay="900">August 22-31st, 2015</span>
-                    <div class="spacer-20"></div>
+   <div class="main-container">
+            <header class="page-header">
+                <div class="background-image-holder parallax-background">
+                    <%= image_tag('head2.jpg', class: 'background-image', alt: 'JSiE') %>
                 </div>
-           	</div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                             <div class="spacer-20"></div>
+                            <h2 class="text-white space-bottom-medium"><br>International Social Innovation Challenge 2015</h2>
+                            <%= link_to "Hear the Story", "#{root_path}#media", :class => "btn btn-primary btn-lg" %>
+                        </div>
+                    </div>
+                </div>
+            </header>
         </div>
-    </div>
     <!-- Start Body Content -->
   	<div class="main" role="main">
     	<div id="content" class="content full">
@@ -59,6 +52,7 @@
             <section class="onepage-section" id="about">
                 <div class="container">
                     <header class="onepage-section-headers text-align-center">
+                        <div class="spacer-30"></div>
                         <h3 class="page-title">About</h3>
                         <h2 class="page-stitle">Around the world the social enterprise movement is growing. Social enterprises have demonstrated how innovative new models can address our biggest social problems, while creating jobs and sustainable growth. Developing the social enterprise sector in India has the potential to transform millions of lives, and those of women in particular. ISIC-15 will bring together top students from India, Pakistan, and the UK to create positive social impact in India, and beyond, by designing scalable models for women's safety and empowerment.  </h2>
                     </header>
@@ -101,6 +95,7 @@
                     </div>
                     <div class="spacer-50"></div>
                 </div>
+                
                         <!-- Schedule Section --> 
                        <section class="onepage-section" id="schedule">
                 <div class="lgray-bg padding-tb50">
@@ -122,26 +117,13 @@
                    		<a href="http://www.jgu.edu.in/" target="_blank" class="btn btn-primary btn-lg">More info about location</a>
                    	</header>
               	</div>
-                <div class="venue-view lgray-bg">
-                	<div id="gmap"></div>
-                	<div class="quick-venue-info">
-                    	<div class="quick-venue-info-details">
-                            <h3>OP Jindal Global University</h3>
-                            <p>Sonipat Narela Road, Near Jagdishpur Village, Sector 35, Sonipat, Haryana 131001, India</p>
-                      	</div>
-                        <hr class="fw">
-                        <span class="small">Current Weather</span>
-                    	<div id="weather"></div>
-                    </div>
-                </div>
-                        </div>
-                    </div>
                 </div>
             </section>
         	<!-- Speakers Section Content -->
             <section class="onepage-section lgray-bg" id="speakers">
                 <div class="container">
                     <header class="onepage-section-headers text-align-center">
+                        <div class="spacer-30"></div>
                         <h3 class="page-title">Participating Staff</h3>
                         <h2 class="page-stitle"></h2>
                     </header>
@@ -320,6 +302,7 @@
         	<section class="onepage-section lgray-bg" id="partners">
             	<div class="container">
                 	<header class="onepage-section-headers text-align-center">
+                        <div class="spacer-30"></div>
                     	<h3 class="page-title">Partners & Sponsors</h3>
                         <div class="spacer-75"></div>
                     <div class="row text-align-center">
@@ -342,7 +325,7 @@
                         <%= link_to image_tag("bc.png", :target => "_blank", :alt => "BC"), 'http://www.britishcouncil.in/' %>
                             <div class="clearfix visible-xs-block"></div>
                         </div>
-                    <%= link_to image_tag("jsielogo.jpg", :target => "_blank", :alt => "JSiE"), 'http://jsie.in/' %>
+                    <%= link_to image_tag("jsielogo.png", :target => "_blank", :alt => "JSiE"), 'http://jsie.in/' %>
                             <div class="clearfix visible-xs-block"></div>
                         </div>
                             <div class="row">

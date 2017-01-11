@@ -1,0 +1,77 @@
+.page-header {
+  margin: 0px;
+  padding: 0px;
+  padding: 180px 0px;
+  border-bottom: none;
+}
+.page-header h1 {
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+.page-header p.lead {
+  font-size: 18px;
+}
+.page-header:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  content: '';
+  opacity: 0.3;
+  z-index: 2;
+}
+.page-header .background-image-holder {
+  height: 150%;
+  top: -20%; 
+}
+ .page-header br {
+    display: none;
+  }
+  .page-header h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  header.centered-text h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .background-image-holder.parallax-background {
+  height: 120%;
+  top: -10%;
+}
+.background-image-holder,
+.foreground-image-holder {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%; 
+  height: 100%;
+  background-size: cover !important;
+  z-index: 0;
+  background-position: 50% 50% !important;
+}
+.hover-background .background-image-holder {
+  height: 110%;
+  width: 110%;
+}
+.column-projects .project.col-md-4 .background-image-holder {
+  width: 100% !important;
+}
+.project.col-md-4 .background-image-holder {
+  width: 103%;
+}
+.boxed-layout .main-container,
+.boxed-layout .footer-container,
+.boxed-layout nav {
+  max-width: 1280px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.space-bottom-medium {
+  margin-bottom: 40px !important;
+}
+.text-white {
+  color: #fff;
+}
